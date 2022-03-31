@@ -1,0 +1,57 @@
+== Info:   Trying ::1:4000...
+== Info: Connected to localhost (::1) port 4000 (#0)
+=> Send header, 136 bytes (0x88)
+0000: PUT /files/image345 HTTP/1.1
+001e: Host: localhost:4000
+0034: User-Agent: curl/7.77.0
+004d: Accept: */*
+005a: Content-Type:image/jpeg
+0073: Content-Length: 4
+0086: 
+=> Send data, 4 bytes (0x4)
+0000: sdfs
+== Info: Mark bundle as not supporting multiuse
+<= Recv header, 36 bytes (0x24)
+0000: HTTP/1.1 500 Internal Server Error
+<= Recv header, 23 bytes (0x17)
+0000: X-Powered-By: Express
+<= Recv header, 32 bytes (0x20)
+0000: Access-Control-Allow-Origin: *
+<= Recv header, 45 bytes (0x2d)
+0000: Content-Security-Policy: default-src 'none'
+<= Recv header, 33 bytes (0x21)
+0000: X-Content-Type-Options: nosniff
+<= Recv header, 40 bytes (0x28)
+0000: Content-Type: text/html; charset=utf-8
+<= Recv header, 22 bytes (0x16)
+0000: Content-Length: 1261
+<= Recv header, 37 bytes (0x25)
+0000: Date: Thu, 31 Mar 2022 02:05:07 GMT
+<= Recv header, 24 bytes (0x18)
+0000: Connection: keep-alive
+<= Recv header, 23 bytes (0x17)
+0000: Keep-Alive: timeout=5
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 1261 bytes (0x4ed)
+0000: <!DOCTYPE html>.<html lang="en">.<head>.<meta charset="utf-8">.<
+0040: title>Error</title>.</head>.<body>.<pre>TypeError: Cannot read p
+0080: roperty &#39;file&#39; of undefined<br> &nbsp; &nbsp;at /Users/l
+00c0: ukmnovnurs/DS/task-1/server.js:39:30<br> &nbsp; &nbsp;at Layer.h
+0100: andle [as handle_request] (/Users/lukmnovnurs/DS/task-1/node_mod
+0140: ules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at next 
+0180: (/Users/lukmnovnurs/DS/task-1/node_modules/express/lib/router/ro
+01c0: ute.js:137:13)<br> &nbsp; &nbsp;at Route.dispatch (/Users/lukmno
+0200: vnurs/DS/task-1/node_modules/express/lib/router/route.js:112:3)<
+0240: br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/Users/luk
+0280: mnovnurs/DS/task-1/node_modules/express/lib/router/layer.js:95:5
+02c0: )<br> &nbsp; &nbsp;at /Users/lukmnovnurs/DS/task-1/node_modules/
+0300: express/lib/router/index.js:281:22<br> &nbsp; &nbsp;at param (/U
+0340: sers/lukmnovnurs/DS/task-1/node_modules/express/lib/router/index
+0380: .js:360:14)<br> &nbsp; &nbsp;at param (/Users/lukmnovnurs/DS/tas
+03c0: k-1/node_modules/express/lib/router/index.js:371:14)<br> &nbsp; 
+0400: &nbsp;at Function.process_params (/Users/lukmnovnurs/DS/task-1/n
+0440: ode_modules/express/lib/router/index.js:416:3)<br> &nbsp; &nbsp;
+0480: at next (/Users/lukmnovnurs/DS/task-1/node_modules/express/lib/r
+04c0: outer/index.js:275:10)</pre>.</body>.</html>.
+== Info: Connection #0 to host localhost left intact
